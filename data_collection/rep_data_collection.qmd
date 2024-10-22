@@ -1,0 +1,128 @@
+---
+title: "Reproducible data collection"
+author: "Aud Halbritter"
+format: 
+  revealjs:
+    embed-resources: true
+    theme: moon
+    slide-number: true
+    show-slide-number: all
+execute:
+  echo: true
+editor: visual
+---
+
+```{r}
+
+#| label: setup
+#| echo: false
+#| eval:true
+#| message: false
+
+library(knitr)
+
+```
+
+## Content
+
+![](pics/best_practice_top.png)
+
+## PFTC Courses
+
+![](pics/pftc4.JPG)
+
+## Design spreadsheet
+
+![](pics/spreadsheets.jpg)
+
+## Spreadsheet content
+
+::: {style="font-size: 70%;"}
+-   Date, time, observation number
+-   Location: region/site
+-   Experimental design: block, plot, replicate, number of observation, treatments
+-   Organism: species/population/genet
+-   Unique ID for sample/observation
+-   Response
+-   Predictors
+-   METADATA: recorder/scribe, weather, notes
+:::
+
+## Design spreadsheet - manual
+
+![](pics/envelope.jpeg)
+
+## Design spreadsheet - digital
+
+![](pics/digital.png)
+
+## Design spreadsheet - data validation
+
+![](pics/typos.png)
+
+## Design spreadsheet - data validation
+
+![](pics/validation.png)
+
+## Spreadsheets
+
+Discuss with your neighbour: are these good spreadsheets?
+
+![](pics/separate-files2.jpg)
+
+## Spreadsheet - bad example
+
+![](pics/separate-files.jpg)
+
+## Long or wide format
+
+
+![](pics/tidyr-pivot_wider_longer.gif)
+
+## Tidy data
+
+
+![](pics/tidydata_1.jpg)
+
+## Consistency
+
+## Consistency - meaningful names
+
+![](pics/final.png)
+
+## Consistency - meaningful names
+
+Which of these are meaningful names?
+
+-   T
+
+-   bird_raw
+
+-   jja1b
+
+-   mean
+
+-   data
+
+-   ddd
+
+## Consistency - meaningful names
+
+-   A name can contain letters, numbers, dot and underscore
+
+-   First letter must be letter or dot. If the first character in a name is a dot, the object is invisible.
+
+-   Avoid special characters (e.g. æ, å, ø, ö)
+
+-   Avoid reserved names: function, TRUE, mean, etc.
+
+## Consistency - style
+
+![](pics/cases.jpg)
+
+## Consistency - standards
+
+Use global data standards when available.
+
+![](pics/dates.png)
+

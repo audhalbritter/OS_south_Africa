@@ -13,15 +13,17 @@ editor: visual
 ---
 
 
-## Content
+## 
 
-![](pics/best_practice_top.png)
+![](pics/data_cycle.png)
 
-## PFTC Courses
+## 
+
+### Plant Functional Trait Courses
 
 ![](pics/pftc4.JPG)
 
-## Design spreadsheet
+## Design spreadsheets
 
 ![](pics/spreadsheets.jpg)
 
@@ -30,7 +32,7 @@ editor: visual
 ::: {style="font-size: 70%;"}
 -   Date, time
 -   Location: region/site
--   Experimental design: block, plot, treatments, replicate
+-   Experimental design: transect, block, plot, treatments, replicate
 -   Organism: species/population/genet
 -   Unique ID for sample/observation
 -   Response
@@ -38,7 +40,7 @@ editor: visual
 -   METADATA: recorder/scribe, weather, notes
 :::
 
-## Design spreadsheet - manual
+## Design spreadsheet - paper
 
 ![](pics/envelope.jpeg)
 
@@ -54,13 +56,24 @@ editor: visual
 
 ![](pics/validation.png)
 
-## Spreadsheet
+## Digitizing spreadsheets
 
+## 
+
+::: callout-note
+### Exercise
 Discuss with your neighbour: are these good spreadsheets?
+:::
+
 
 ![](pics/separate-files2.jpg)
 
-## Spreadsheet - bad example
+## 
+
+::: callout-note
+### Exercise
+Discuss with your neighbour: are these good spreadsheets?
+:::
 
 ![](pics/separate-files.jpg)
 
@@ -77,15 +90,18 @@ Discuss with your neighbour: are these good spreadsheets?
 
 
 
-## Consistency
+## Consistency in datasheets
 
 ## Consistency - meaningful names
 
 ![](pics/final.png)
 
 ## Consistency - meaningful names
+::: callout-note
+### Exercise
+Discuss with your neighbour: which of these are meaningful variable names?
+:::
 
-Which of these are meaningful variable names?
 
 -   T
 
@@ -112,6 +128,26 @@ Which of these are meaningful variable names?
 ## Consistency - style
 
 ![](pics/cases.jpg)
+
+## Useful package for style
+
+```{r}
+#| label: styler
+#| echo: true
+#| eval: true
+
+library(styler)
+ 
+style_text("my_function<-function(my_data){
+  my_data|> group_by(group)|> 
+    summarise(mean=mean(variable),se=sd(variable)/sqrt(n()))}")  
+
+```
+
+## Useful package for style
+
+![](pics/styler.png)
+
 
 ## Consistency - standards
 

@@ -62,7 +62,7 @@ editor: visual
 
 ::: callout-note
 ### Exercise
-Discuss with your neighbour: are these good spreadsheets?
+Discuss in pairs: are these good spreadsheets?
 :::
 
 
@@ -99,7 +99,7 @@ Discuss with your neighbour: are these good spreadsheets?
 ## Consistency - meaningful names
 ::: callout-note
 ### Exercise
-Discuss with your neighbour: which of these are meaningful variable names?
+Discuss in pairs: which of these are meaningful variable names?
 :::
 
 
@@ -125,11 +125,15 @@ Discuss with your neighbour: which of these are meaningful variable names?
 
 -   Avoid reserved names: function, TRUE, mean, etc.
 
+
 ## Consistency - style
+
+["Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread."](https://style.tidyverse.org/)
 
 ![](pics/cases.jpg)
 
-## Useful package for style
+## Consistent style with styler
+
 
 ```{r}
 #| label: styler
@@ -154,4 +158,7 @@ style_text("my_function<-function(my_data){
 Use global data standards (ISO) when available for dates: yyyy-mm-dd
 
 ![](pics/dates.png)
+
+
+## Questions?
 

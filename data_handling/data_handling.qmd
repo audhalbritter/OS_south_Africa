@@ -8,8 +8,6 @@ format:
     slide-number: true
     show-slide-number: all
     
-execute:
-  echo: true
 editor: visual
 ---
 
@@ -18,7 +16,6 @@ editor: visual
 #| label: setup
 #| echo: false
 #| eval: true
-#| message: false
 
 library(tidyverse) 
 library(palmerpenguins) 
@@ -33,7 +30,7 @@ library(knitr)
 
 ## Data cycle
 
-![](pics/Screenshot 2024-10-15 at 09.31.32.png)
+![](pics/data_cycle.png)
 
 ## Data handling and curation is time consuming
 
@@ -48,14 +45,32 @@ library(knitr)
 
 ## 
 
+### Import data with read_delim
+
+See [Import data](https://biostats-r.github.io/biostats/workingInR/005_Importing_Data_in_R.html) BioST@TS tutorial
+
+```{r}
+#| label: import
+#| echo: true
+#| eval: false
+
+read_delim(file = "data/plant_community_2024.csv")
+
+```
+
+
+
+## 
+
 ### Data cleaning with the Palmer penguins dataset
 
 ![](pics/lter_penguins.png){width=120}
 
+## 
 
 ::: callout-note
 ### Exercise
-Run the following commands.
+Run the following commands to install the palmerpenguins package.
 :::
 
 ```{r}
@@ -66,9 +81,10 @@ Run the following commands.
 
 #install.packages("palmerpenguins")
 library(palmerpenguins)
-head(penguins)
+head(penguins_raw)
 
 ```
+
 
 ## 
 
@@ -79,17 +95,31 @@ head(penguins)
 #| echo: true
 #| eval: true
 
-penguins |> 
+penguins_raw |> 
   names() 
 
 ```
+
+## 
+
+### Clean names with janitor
 
 ```{r}
 #| label: janitor2
 #| echo: true
 #| eval: true
 
-penguins_clean <- penguins |> 
+penguins_raw |> 
+  names() 
+
+```
+
+```{r}
+#| label: janitor3
+#| echo: true
+#| eval: true
+
+penguins_clean <- penguins_raw |> 
   janitor::clean_names(case = "snake") 
 
 penguins_clean |> 
@@ -129,18 +159,104 @@ out
 ```
 
 
-## Data cleaning
+## 
 
-- Do not touch raw data files
-- Clean data with code
-- Check each cleaning step
+::: callout-note
+### Exercise
+Run the following functions:
+
+`clean_names()`
+
+`glimpse()`
+
+`skimr::skim()`
+:::
+
+
+## 
+
+### Data validation
+
+```{r}
+#| label: validation
+#| echo: true
+#| eval: true
+#| messages: false
+
+library(validate)
+
+rules <- validator(culm = culmen_length_mm >= 0, 
+                   body = body_mass_g > 3000,
+                   species = is.character(species),
+                   sex = sex %in% c("FEMALES", "MALE"))
+
+```
+
+
+## 
+
+### Data validation
+
+```{r}
+#| label: validation-summary
+#| echo: true
+#| eval: true
+#| messages: false
+
+out   <- confront(penguins_clean, rules)
+summary(out)
+
+```
+
+## 
+
+### Data validation
+
+```{r}
+#| label: validation-plot
+#| echo: true
+#| eval: true
+#| messages: false
+
+plot(out)
+
+```
+
+
+## Rules for data cleaning
+
+- Deposit and back-up raw data files 
+- Do not manually manipulate the raw data files
+- Clean data using code
+- Check the cleaning code
 
 
 ## 
 
 ### Keep track of changes with tidylog
 
-![](pics/tidylog.png)
+```{r}
+#| label: tidylog
+#| echo: true
+#| eval: true
+#| message: false
+
+library(tidylog)
+
+```
+
+```{r}
+#| label: tidylog2
+#| echo: true
+#| eval: true
+#| message: true
+
+dat <- penguins_clean |> 
+  tidylog::select(study_name, species, island, individual_id, body_mass_g) |> 
+  tidylog::filter(species %in% c("Adelie Penguin (Pygoscelis adeliae)"))
+
+```
+
 
 
 ##
@@ -151,7 +267,7 @@ out
 #| label: duplicates1
 #| echo: false
 #| eval: true
-#| 
+
 duplicate_data <- tibble(Day = c("Monday", "Tuesday","Wednesday", "Wednesday"), 
                Person = c("Becks", "Amy", "Matt", "Matt"))
 
@@ -167,13 +283,18 @@ duplicate_data
 
 ```
 
+##
+
+### Remove duplicates with dplyr
+
 ```{r}
 #| label: duplicates3
 #| echo: true
 #| eval: true
+#| message: true
 
 duplicate_data |> 
-  dplyr::distinct()
+  tidylog::distinct()
 
 ```
 
@@ -217,11 +338,27 @@ By throwing away potentially useful data (only including those rows without a NA
 ### Vizualise missing data with naniar
 
 ```{r}
+#| label: make-messy
+#| echo: false
+#| eval: true
+
+library(messy)
+set.seed(1234)
+penguins_messy <- bind_cols(penguins |> 
+                              select(year, species, island, sex, body_mass_g), 
+                            messy(penguins[3:4])) |> 
+  mutate(bill_length_mm = as.numeric(bill_length_mm),
+         bill_depth_mm = as.numeric(bill_depth_mm))
+
+```
+
+
+```{r}
 #| label: naniar
 #| echo: true
 #| eval: true
 
-penguins_clean |> 
+penguins_messy |> 
   naniar::vis_miss()
 ```
 
@@ -230,7 +367,7 @@ penguins_clean |>
 
 ### Different types of missingness
 
-Data can be missing random or systematically. Random missing data is less problematic.
+Data can be missing random or systematically.
 
 ```{r}
 #| label: naniar-viz
@@ -238,61 +375,14 @@ Data can be missing random or systematically. Random missing data is less proble
 #| eval: true
 
 library(naniar)
-penguins_clean |> 
+penguins_messy |> 
   ggplot(aes(x = bill_length_mm, y = body_mass_g)) +
   geom_miss_point()
 
 ```
 
 
-## 
 
-### Data validation
-
-```{r}
-#| label: validation
-#| echo: true
-#| eval: true
-#| messages: false
-
-library(validate)
-
-rules <- validator(bill_length_mm >= 0, 
-                   body_mass_g > 3000,
-                   is.character(species),
-                   sex %in% c("female", "male"))
-
-```
-
-
-## 
-
-### Data validation
-
-```{r}
-#| label: validation-summary
-#| echo: true
-#| eval: true
-#| messages: false
-
-out   <- confront(penguins_clean, rules)
-summary(out)
-
-```
-
-## 
-
-### Data validation
-
-```{r}
-#| label: validation-plot
-#| echo: true
-#| eval: true
-#| messages: false
-
-plot(out)
-
-```
 
 ## 
 
@@ -312,60 +402,28 @@ plot(out)
 
 ![](pics/Dplyr_3.jpg)
 
-
-## Code style
-
-["Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread."](https://style.tidyverse.org/)
-
-```{r}
-#| label: style-guide
-#| echo: true
-#| eval: false
-
-
-my_function <- function(my_data){
-  
-  my_data |> 
-    group_by(group) |> 
-    summarise(mean = mean(variable),
-              se = sd(variable)/sqrt(n()))
-  
-} 
-
-my_function<-function(my_data){
-  my_data|> group_by(group)|> 
-    summarise(mean=mean(variable),se=sd(variable)/sqrt(n()))} 
-
-```
-
-
-## Useful package for style
-
-```{r}
-#| label: styler
-#| echo: true
-#| eval: false
-
-library(styler)
- 
-style_text("my_function<-function(my_data){
-  my_data|> group_by(group)|> 
-    summarise(mean=mean(variable),se=sd(variable)/sqrt(n()))}")  
-
-```
-
-## Useful package for style
-
-![](pics/styler.png)
-
-
 ## 
 
 ::: callout-note
 ### Exercise
-Use the raw penguine data and do the following tasks.
+Use the penguins dataset to:
 
-- clean the names
+- Select the columns species, island and body_mass_g
+- Filter for the species Adelie and the island Biscoe and Dream
+
+- Convert the penguin body mass from gram to kilogram
+- Calculate the mean bill length and standard error for each penguin species
+- Make a wide dataset showing the body mass for each penguin species in a separate column. And turn it back to a long dataframe.
+
 :::
+
+
+## Reproducible workflows
+
+![](pics/non-rep.png)
+
+## Reproducible workflows
+
+![](pics/quarto_workflow2.png)
 
 

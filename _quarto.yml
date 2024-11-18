@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - data_collection/rep_data_collection.qmd
+    - data_handling/data_handling.qmd
+
+format:
+  html:
+      highlight-style: a11y
+      theme:
+        light: [zephyr, css/light.scss]
+        dark: [zephyr, css/dark.scss, css/light.scss]
+      code-link: true
+
+execute:
+  freeze: auto
+
+website:
+    favicon: figures/favicon.ico

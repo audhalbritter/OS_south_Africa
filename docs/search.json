@@ -1,0 +1,352 @@
+[
+  {
+    "objectID": "data_collection/rep_data_collection.html#section-1",
+    "href": "data_collection/rep_data_collection.html#section-1",
+    "title": "Reproducible data collection",
+    "section": "",
+    "text": "Plant Functional Trait Courses"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#design-spreadsheets",
+    "href": "data_collection/rep_data_collection.html#design-spreadsheets",
+    "title": "Reproducible data collection",
+    "section": "Design spreadsheets",
+    "text": "Design spreadsheets"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#spreadsheet-content",
+    "href": "data_collection/rep_data_collection.html#spreadsheet-content",
+    "title": "Reproducible data collection",
+    "section": "Spreadsheet content",
+    "text": "Spreadsheet content\n\n\nDate, time\nLocation: region/site\nExperimental design: transect, block, plot, treatments, replicate\nOrganism: species/population/genet\nUnique ID for sample/observation\nResponse\nPredictors\nMETADATA: recorder/scribe, weather, notes"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#design-spreadsheet---paper",
+    "href": "data_collection/rep_data_collection.html#design-spreadsheet---paper",
+    "title": "Reproducible data collection",
+    "section": "Design spreadsheet - paper",
+    "text": "Design spreadsheet - paper"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#design-spreadsheet---digital",
+    "href": "data_collection/rep_data_collection.html#design-spreadsheet---digital",
+    "title": "Reproducible data collection",
+    "section": "Design spreadsheet - digital",
+    "text": "Design spreadsheet - digital"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#design-spreadsheet---data-validation",
+    "href": "data_collection/rep_data_collection.html#design-spreadsheet---data-validation",
+    "title": "Reproducible data collection",
+    "section": "Design spreadsheet - data validation",
+    "text": "Design spreadsheet - data validation"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#design-spreadsheet---data-validation-1",
+    "href": "data_collection/rep_data_collection.html#design-spreadsheet---data-validation-1",
+    "title": "Reproducible data collection",
+    "section": "Design spreadsheet - data validation",
+    "text": "Design spreadsheet - data validation"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#digitizing-spreadsheets",
+    "href": "data_collection/rep_data_collection.html#digitizing-spreadsheets",
+    "title": "Reproducible data collection",
+    "section": "Digitizing spreadsheets",
+    "text": "Digitizing spreadsheets"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#section-2",
+    "href": "data_collection/rep_data_collection.html#section-2",
+    "title": "Reproducible data collection",
+    "section": "",
+    "text": "Exercise\n\n\nDiscuss in pairs: are these good spreadsheets?"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#section-3",
+    "href": "data_collection/rep_data_collection.html#section-3",
+    "title": "Reproducible data collection",
+    "section": "",
+    "text": "Exercise\n\n\nDiscuss with your neighbour: are these good spreadsheets?"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#tidy-data",
+    "href": "data_collection/rep_data_collection.html#tidy-data",
+    "title": "Reproducible data collection",
+    "section": "Tidy data",
+    "text": "Tidy data"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#long-or-wide-format",
+    "href": "data_collection/rep_data_collection.html#long-or-wide-format",
+    "title": "Reproducible data collection",
+    "section": "Long or wide format",
+    "text": "Long or wide format"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#consistency-in-datasheets",
+    "href": "data_collection/rep_data_collection.html#consistency-in-datasheets",
+    "title": "Reproducible data collection",
+    "section": "Consistency in datasheets",
+    "text": "Consistency in datasheets"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#consistency---meaningful-names",
+    "href": "data_collection/rep_data_collection.html#consistency---meaningful-names",
+    "title": "Reproducible data collection",
+    "section": "Consistency - meaningful names",
+    "text": "Consistency - meaningful names"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#consistency---meaningful-names-1",
+    "href": "data_collection/rep_data_collection.html#consistency---meaningful-names-1",
+    "title": "Reproducible data collection",
+    "section": "Consistency - meaningful names",
+    "text": "Consistency - meaningful names\n\n\n\n\n\n\nExercise\n\n\nDiscuss in pairs: which of these are meaningful variable names?\n\n\n\n\nT\nbird_raw\njja1b\nmean\ndata\nddd"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#consistency---meaningful-names-2",
+    "href": "data_collection/rep_data_collection.html#consistency---meaningful-names-2",
+    "title": "Reproducible data collection",
+    "section": "Consistency - meaningful names",
+    "text": "Consistency - meaningful names\n\nA name can contain letters, numbers, dot and underscore\nFirst letter must be letter or dot. If the first character in a name is a dot, the object is invisible.\nAvoid special characters (e.g. æ, å, ø, ö)\nAvoid reserved names: function, TRUE, mean, etc."
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#consistency---style",
+    "href": "data_collection/rep_data_collection.html#consistency---style",
+    "title": "Reproducible data collection",
+    "section": "Consistency - style",
+    "text": "Consistency - style\n“Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread.”"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#consistent-style-with-styler",
+    "href": "data_collection/rep_data_collection.html#consistent-style-with-styler",
+    "title": "Reproducible data collection",
+    "section": "Consistent style with styler",
+    "text": "Consistent style with styler\n\nlibrary(styler)\n \nstyle_text(\"my_function&lt;-function(my_data){\n  my_data|&gt; group_by(group)|&gt; \n    summarise(mean=mean(variable),se=sd(variable)/sqrt(n()))}\")  \n\nmy_function &lt;- function(my_data) {\n  my_data |&gt;\n    group_by(group) |&gt;\n    summarise(mean = mean(variable), se = sd(variable) / sqrt(n()))\n}"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#useful-package-for-style",
+    "href": "data_collection/rep_data_collection.html#useful-package-for-style",
+    "title": "Reproducible data collection",
+    "section": "Useful package for style",
+    "text": "Useful package for style"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#consistency---standards",
+    "href": "data_collection/rep_data_collection.html#consistency---standards",
+    "title": "Reproducible data collection",
+    "section": "Consistency - standards",
+    "text": "Consistency - standards\nUse global data standards (ISO) when available for dates: yyyy-mm-dd"
+  },
+  {
+    "objectID": "data_collection/rep_data_collection.html#questions",
+    "href": "data_collection/rep_data_collection.html#questions",
+    "title": "Reproducible data collection",
+    "section": "Questions?",
+    "text": "Questions?"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#data-cycle",
+    "href": "data_handling/data_handling.html#data-cycle",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "Data cycle",
+    "text": "Data cycle"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#data-handling-and-curation-is-time-consuming",
+    "href": "data_handling/data_handling.html#data-handling-and-curation-is-time-consuming",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "Data handling and curation is time consuming",
+    "text": "Data handling and curation is time consuming"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#data-cleaning-vs-data-wrangling",
+    "href": "data_handling/data_handling.html#data-cleaning-vs-data-wrangling",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "Data cleaning vs Data wrangling",
+    "text": "Data cleaning vs Data wrangling\nData cleaning is the process of removing incorrect, duplicate, typos, or otherwise erroneous data from a dataset\nData wrangling changing the format to make it more useful for your analysis"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-1",
+    "href": "data_handling/data_handling.html#section-1",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Import data with read_delim\nSee Import data BioST@TS tutorial\n\nread_delim(file = \"data/plant_community_2024.csv\")"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-2",
+    "href": "data_handling/data_handling.html#section-2",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Data cleaning with the Palmer penguins dataset"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-3",
+    "href": "data_handling/data_handling.html#section-3",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Exercise\n\n\nRun the following commands to install the palmerpenguins package.\n\n\n\n\n#install.packages(\"palmerpenguins\")\nlibrary(palmerpenguins)\nhead(penguins_raw)\n\n# A tibble: 6 × 17\n  studyName `Sample Number` Species          Region Island Stage `Individual ID`\n  &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;            &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;          \n1 PAL0708                 1 Adelie Penguin … Anvers Torge… Adul… N1A1           \n2 PAL0708                 2 Adelie Penguin … Anvers Torge… Adul… N1A2           \n3 PAL0708                 3 Adelie Penguin … Anvers Torge… Adul… N2A1           \n4 PAL0708                 4 Adelie Penguin … Anvers Torge… Adul… N2A2           \n5 PAL0708                 5 Adelie Penguin … Anvers Torge… Adul… N3A1           \n6 PAL0708                 6 Adelie Penguin … Anvers Torge… Adul… N3A2           \n# ℹ 10 more variables: `Clutch Completion` &lt;chr&gt;, `Date Egg` &lt;date&gt;,\n#   `Culmen Length (mm)` &lt;dbl&gt;, `Culmen Depth (mm)` &lt;dbl&gt;,\n#   `Flipper Length (mm)` &lt;dbl&gt;, `Body Mass (g)` &lt;dbl&gt;, Sex &lt;chr&gt;,\n#   `Delta 15 N (o/oo)` &lt;dbl&gt;, `Delta 13 C (o/oo)` &lt;dbl&gt;, Comments &lt;chr&gt;"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-4",
+    "href": "data_handling/data_handling.html#section-4",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Clean names with janitor\n\npenguins_raw |&gt; \n  names() \n\n [1] \"studyName\"           \"Sample Number\"       \"Species\"            \n [4] \"Region\"              \"Island\"              \"Stage\"              \n [7] \"Individual ID\"       \"Clutch Completion\"   \"Date Egg\"           \n[10] \"Culmen Length (mm)\"  \"Culmen Depth (mm)\"   \"Flipper Length (mm)\"\n[13] \"Body Mass (g)\"       \"Sex\"                 \"Delta 15 N (o/oo)\"  \n[16] \"Delta 13 C (o/oo)\"   \"Comments\""
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-5",
+    "href": "data_handling/data_handling.html#section-5",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Clean names with janitor\n\npenguins_raw |&gt; \n  names() \n\n [1] \"studyName\"           \"Sample Number\"       \"Species\"            \n [4] \"Region\"              \"Island\"              \"Stage\"              \n [7] \"Individual ID\"       \"Clutch Completion\"   \"Date Egg\"           \n[10] \"Culmen Length (mm)\"  \"Culmen Depth (mm)\"   \"Flipper Length (mm)\"\n[13] \"Body Mass (g)\"       \"Sex\"                 \"Delta 15 N (o/oo)\"  \n[16] \"Delta 13 C (o/oo)\"   \"Comments\"           \n\n\n\npenguins_clean &lt;- penguins_raw |&gt; \n  janitor::clean_names(case = \"snake\") \n\npenguins_clean |&gt; \n  names()\n\n [1] \"study_name\"        \"sample_number\"     \"species\"          \n [4] \"region\"            \"island\"            \"stage\"            \n [7] \"individual_id\"     \"clutch_completion\" \"date_egg\"         \n[10] \"culmen_length_mm\"  \"culmen_depth_mm\"   \"flipper_length_mm\"\n[13] \"body_mass_g\"       \"sex\"               \"delta_15_n_o_oo\"  \n[16] \"delta_13_c_o_oo\"   \"comments\""
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-6",
+    "href": "data_handling/data_handling.html#section-6",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Get a glimps wiht dplyr\n\npenguins_clean |&gt;\n  dplyr::glimpse()\n\nRows: 344\nColumns: 17\n$ study_name        &lt;chr&gt; \"PAL0708\", \"PAL0708\", \"PAL0708\", \"PAL0708\", \"PAL0708…\n$ sample_number     &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…\n$ species           &lt;chr&gt; \"Adelie Penguin (Pygoscelis adeliae)\", \"Adelie Pengu…\n$ region            &lt;chr&gt; \"Anvers\", \"Anvers\", \"Anvers\", \"Anvers\", \"Anvers\", \"A…\n$ island            &lt;chr&gt; \"Torgersen\", \"Torgersen\", \"Torgersen\", \"Torgersen\", …\n$ stage             &lt;chr&gt; \"Adult, 1 Egg Stage\", \"Adult, 1 Egg Stage\", \"Adult, …\n$ individual_id     &lt;chr&gt; \"N1A1\", \"N1A2\", \"N2A1\", \"N2A2\", \"N3A1\", \"N3A2\", \"N4A…\n$ clutch_completion &lt;chr&gt; \"Yes\", \"Yes\", \"Yes\", \"Yes\", \"Yes\", \"Yes\", \"No\", \"No\"…\n$ date_egg          &lt;date&gt; 2007-11-11, 2007-11-11, 2007-11-16, 2007-11-16, 200…\n$ culmen_length_mm  &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ culmen_depth_mm   &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;dbl&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;dbl&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;chr&gt; \"MALE\", \"FEMALE\", \"FEMALE\", NA, \"FEMALE\", \"MALE\", \"F…\n$ delta_15_n_o_oo   &lt;dbl&gt; NA, 8.94956, 8.36821, NA, 8.76651, 8.66496, 9.18718,…\n$ delta_13_c_o_oo   &lt;dbl&gt; NA, -24.69454, -25.33302, NA, -25.32426, -25.29805, …\n$ comments          &lt;chr&gt; \"Not enough blood for isotopes.\", NA, NA, \"Adult not…"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-7",
+    "href": "data_handling/data_handling.html#section-7",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Skim your data with skimr\n\nout &lt;- penguins_clean |&gt; \n  skimr::skim() \n\nout\n\n\nData summary\n\n\nName\npenguins_clean\n\n\nNumber of rows\n344\n\n\nNumber of columns\n17\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n9\n\n\nDate\n1\n\n\nnumeric\n7\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nstudy_name\n0\n1.00\n7\n7\n0\n3\n0\n\n\nspecies\n0\n1.00\n33\n41\n0\n3\n0\n\n\nregion\n0\n1.00\n6\n6\n0\n1\n0\n\n\nisland\n0\n1.00\n5\n9\n0\n3\n0\n\n\nstage\n0\n1.00\n18\n18\n0\n1\n0\n\n\nindividual_id\n0\n1.00\n4\n6\n0\n190\n0\n\n\nclutch_completion\n0\n1.00\n2\n3\n0\n2\n0\n\n\nsex\n11\n0.97\n4\n6\n0\n2\n0\n\n\ncomments\n290\n0.16\n18\n68\n0\n10\n0\n\n\n\nVariable type: Date\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nmedian\nn_unique\n\n\n\n\ndate_egg\n0\n1\n2007-11-09\n2009-12-01\n2008-11-09\n50\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nsample_number\n0\n1.00\n63.15\n40.43\n1.00\n29.00\n58.00\n95.25\n152.00\n▇▇▆▅▃\n\n\nculmen_length_mm\n2\n0.99\n43.92\n5.46\n32.10\n39.23\n44.45\n48.50\n59.60\n▃▇▇▆▁\n\n\nculmen_depth_mm\n2\n0.99\n17.15\n1.97\n13.10\n15.60\n17.30\n18.70\n21.50\n▅▅▇▇▂\n\n\nflipper_length_mm\n2\n0.99\n200.92\n14.06\n172.00\n190.00\n197.00\n213.00\n231.00\n▂▇▃▅▂\n\n\nbody_mass_g\n2\n0.99\n4201.75\n801.95\n2700.00\n3550.00\n4050.00\n4750.00\n6300.00\n▃▇▆▃▂\n\n\ndelta_15_n_o_oo\n14\n0.96\n8.73\n0.55\n7.63\n8.30\n8.65\n9.17\n10.03\n▃▇▆▅▂\n\n\ndelta_13_c_o_oo\n13\n0.96\n-25.69\n0.79\n-27.02\n-26.32\n-25.83\n-25.06\n-23.79\n▆▇▅▅▂"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-8",
+    "href": "data_handling/data_handling.html#section-8",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Exercise\n\n\nRun the following functions:\nclean_names()\nglimpse()\nskimr::skim()"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-9",
+    "href": "data_handling/data_handling.html#section-9",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Data validation\n\nlibrary(validate)\n\nrules &lt;- validator(culm = culmen_length_mm &gt;= 0, \n                   body = body_mass_g &gt; 3000,\n                   species = is.character(species),\n                   sex = sex %in% c(\"FEMALES\", \"MALE\"))"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-10",
+    "href": "data_handling/data_handling.html#section-10",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Data validation\n\nout   &lt;- confront(penguins_clean, rules)\nsummary(out)\n\n     name items passes fails nNA error warning                     expression\n1    culm   344    342     0   2 FALSE   FALSE culmen_length_mm - 0 &gt;= -1e-08\n2    body   344    331    11   2 FALSE   FALSE             body_mass_g &gt; 3000\n3 species     1      1     0   0 FALSE   FALSE          is.character(species)\n4     sex   344    168   165  11 FALSE   FALSE sex %vin% c(\"FEMALES\", \"MALE\")"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-11",
+    "href": "data_handling/data_handling.html#section-11",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Data validation\n\nplot(out)"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#rules-for-data-cleaning",
+    "href": "data_handling/data_handling.html#rules-for-data-cleaning",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "Rules for data cleaning",
+    "text": "Rules for data cleaning\n\nDeposit and back-up raw data files\nDo not manually manipulate the raw data files\nClean data using code\nCheck the cleaning code"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-12",
+    "href": "data_handling/data_handling.html#section-12",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Keep track of changes with tidylog\n\nlibrary(tidylog)\n\n\ndat &lt;- penguins_clean |&gt; \n  tidylog::select(study_name, species, island, individual_id, body_mass_g) |&gt; \n  tidylog::filter(species %in% c(\"Adelie Penguin (Pygoscelis adeliae)\"))\n\nselect: dropped 12 variables (sample_number, region, stage, clutch_completion, date_egg, …)\nfilter: removed 192 rows (56%), 152 rows remaining"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-13",
+    "href": "data_handling/data_handling.html#section-13",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Remove duplicates with dplyr\n\n\n# A tibble: 4 × 2\n  Day       Person\n  &lt;chr&gt;     &lt;chr&gt; \n1 Monday    Becks \n2 Tuesday   Amy   \n3 Wednesday Matt  \n4 Wednesday Matt"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-14",
+    "href": "data_handling/data_handling.html#section-14",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Remove duplicates with dplyr\n\nduplicate_data |&gt; \n  tidylog::distinct()\n\ndistinct: removed one row (25%), 3 rows remaining\n\n\n# A tibble: 3 × 2\n  Day       Person\n  &lt;chr&gt;     &lt;chr&gt; \n1 Monday    Becks \n2 Tuesday   Amy   \n3 Wednesday Matt"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#missing-data",
+    "href": "data_handling/data_handling.html#missing-data",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "Missing data",
+    "text": "Missing data\nMissing data is often a problem, e.g. for running a model. Typically as ecologists we sweep missing data under the carpet by using a “complete case” approach to data analysis."
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-15",
+    "href": "data_handling/data_handling.html#section-15",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "If you have ever written some code like this:\n\nnewdf &lt;- na.omit(penguins_clean)\n\nnewdf &lt;- penguins_clean[complete.cases(penguins_clean), ]\n\nnewdf &lt;- penguins_clean |&gt;\n  tidyr::drop_na()\n\nyou are removing missing data (NAs) from your dataset."
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-16",
+    "href": "data_handling/data_handling.html#section-16",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Why is this a problem?\nBy throwing away potentially useful data (only including those rows without a NA in them) you reduce the information you are working with, reduce statistical power and introduce selection bias (invalidating any assumption of randomisation)."
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-17",
+    "href": "data_handling/data_handling.html#section-17",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Vizualise missing data with naniar\n\npenguins_messy |&gt; \n  naniar::vis_miss()"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-18",
+    "href": "data_handling/data_handling.html#section-18",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Different types of missingness\nData can be missing random or systematically.\n\nlibrary(naniar)\npenguins_messy |&gt; \n  ggplot(aes(x = bill_length_mm, y = body_mass_g)) +\n  geom_miss_point()"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-19",
+    "href": "data_handling/data_handling.html#section-19",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Data wrangling with dplyr"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-20",
+    "href": "data_handling/data_handling.html#section-20",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Data wrangling with dplyr"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-21",
+    "href": "data_handling/data_handling.html#section-21",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Data wrangling with tidyr"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#section-22",
+    "href": "data_handling/data_handling.html#section-22",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "",
+    "text": "Exercise\n\n\nUse the penguins dataset to:\n\nSelect the columns species, island and body_mass_g\nFilter for the species Adelie and the island Biscoe and Dream\nConvert the penguin body mass from gram to kilogram\nCalculate the mean bill length and standard error for each penguin species\nMake a wide dataset showing the body mass for each penguin species in a separate column. And turn it back to a long dataframe."
+  },
+  {
+    "objectID": "data_handling/data_handling.html#reproducible-workflows",
+    "href": "data_handling/data_handling.html#reproducible-workflows",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "Reproducible workflows",
+    "text": "Reproducible workflows"
+  },
+  {
+    "objectID": "data_handling/data_handling.html#reproducible-workflows-1",
+    "href": "data_handling/data_handling.html#reproducible-workflows-1",
+    "title": "Data handling and curation - from raw to clean data",
+    "section": "Reproducible workflows",
+    "text": "Reproducible workflows"
+  }
+]

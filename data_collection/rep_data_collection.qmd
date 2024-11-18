@@ -1,0 +1,164 @@
+---
+title: "Reproducible data collection"
+author: "Aud Halbritter"
+format: 
+  revealjs:
+    embed-resources: true
+    theme: moon
+    slide-number: true
+    show-slide-number: all
+execute:
+  echo: true
+editor: visual
+---
+
+
+## 
+
+![](pics/data_cycle.png)
+
+## 
+
+### Plant Functional Trait Courses
+
+![](pics/pftc4.JPG)
+
+## Design spreadsheets
+
+![](pics/spreadsheets.jpg)
+
+## Spreadsheet content
+
+::: {style="font-size: 70%;"}
+-   Date, time
+-   Location: region/site
+-   Experimental design: transect, block, plot, treatments, replicate
+-   Organism: species/population/genet
+-   Unique ID for sample/observation
+-   Response
+-   Predictors
+-   METADATA: recorder/scribe, weather, notes
+:::
+
+## Design spreadsheet - paper
+
+![](pics/envelope.jpeg)
+
+## Design spreadsheet - digital
+
+![](pics/digital.png)
+
+## Design spreadsheet - data validation
+
+![](pics/typos.png)
+
+## Design spreadsheet - data validation
+
+![](pics/validation.png)
+
+## Digitizing spreadsheets
+
+## 
+
+::: callout-note
+### Exercise
+Discuss in pairs: are these good spreadsheets?
+:::
+
+
+![](pics/separate-files2.jpg)
+
+## 
+
+::: callout-note
+### Exercise
+Discuss with your neighbour: are these good spreadsheets?
+:::
+
+![](pics/separate-files.jpg)
+
+## Tidy data
+
+
+![](pics/tidydata_1.jpg)
+
+
+## Long or wide format
+
+
+![](pics/tidyr-pivot_wider_longer.gif)
+
+
+
+## Consistency in datasheets
+
+## Consistency - meaningful names
+
+![](pics/final.png)
+
+## Consistency - meaningful names
+::: callout-note
+### Exercise
+Discuss in pairs: which of these are meaningful variable names?
+:::
+
+
+-   T
+
+-   bird_raw
+
+-   jja1b
+
+-   mean
+
+-   data
+
+-   ddd
+
+## Consistency - meaningful names
+
+-   A name can contain letters, numbers, dot and underscore
+
+-   First letter must be letter or dot. If the first character in a name is a dot, the object is invisible.
+
+-   Avoid special characters (e.g. æ, å, ø, ö)
+
+-   Avoid reserved names: function, TRUE, mean, etc.
+
+
+## Consistency - style
+
+["Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread."](https://style.tidyverse.org/)
+
+![](pics/cases.jpg)
+
+## Consistent style with styler
+
+
+```{r}
+#| label: styler
+#| echo: true
+#| eval: true
+
+library(styler)
+ 
+style_text("my_function<-function(my_data){
+  my_data|> group_by(group)|> 
+    summarise(mean=mean(variable),se=sd(variable)/sqrt(n()))}")  
+
+```
+
+## Useful package for style
+
+![](pics/styler.png)
+
+
+## Consistency - standards
+
+Use global data standards (ISO) when available for dates: yyyy-mm-dd
+
+![](pics/dates.png)
+
+
+## Questions?
+

@@ -333,7 +333,7 @@
     "href": "data_handling/data_handling.html#section-22",
     "title": "Data handling and curation - from raw to clean data",
     "section": "",
-    "text": "Exercise\n\n\nUse the penguins dataset to:\n\nSelect the columns species, island and body_mass_g\nFilter for the species Adelie and the island Biscoe and Dream\nConvert the penguin body mass from gram to kilogram\nCalculate the mean bill length and standard error for each penguin species\nMake a wide dataset showing the body mass for each penguin species in a separate column. And turn it back to a long dataframe."
+    "text": "Exercise\n\n\nUse the penguins dataset to:\n\nSelect the columns species, island and body_mass_g\nFilter for the species Adelie and the island Biscoe and Dream\nConvert the penguin body mass from gram to kilogram\nCalculate the mean bill length and standard error for each penguin species\nMake a wide dataset showing the body mass for each penguin species in a separate column. And turn it back to a long dataframe.\n\nImport the messy_data.RDS data file and clean it."
   },
   {
     "objectID": "data_handling/data_handling.html#reproducible-workflows",

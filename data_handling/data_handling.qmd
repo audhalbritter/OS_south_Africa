@@ -415,6 +415,8 @@ Use the penguins dataset to:
 - Calculate the mean bill length and standard error for each penguin species
 - Make a wide dataset showing the body mass for each penguin species in a separate column. And turn it back to a long dataframe.
 
+Import the *messy_data.RDS* data file and clean it.
+
 :::
 
 

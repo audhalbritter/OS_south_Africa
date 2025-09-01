@@ -12,6 +12,13 @@ format:
         light: [zephyr, css/light.scss]
         dark: [zephyr, css/dark.scss, css/light.scss]
       code-link: true
+  pdf:
+    documentclass: article
+    papersize: a4
+    geometry:
+      - top=30mm
+      - left=20mm
+      - heightrounded
 
 execute:
   freeze: auto

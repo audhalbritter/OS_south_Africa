@@ -7,6 +7,13 @@ format:
     theme: moon
     slide-number: true
     show-slide-number: all
+  beamer:
+    theme: "Madrid"
+    colortheme: "beaver"
+    fonttheme: "structurebold"
+    aspectratio: 169
+    navigation: horizontal
+    section-titles: false
     
 editor: visual
 ---
@@ -24,9 +31,9 @@ library(knitr)
 
 ```
 
-## {}
+## 
 
-![](pics/Ecology_data.jfif)
+![](pics/Ecology_data.jpg)
 
 ## Data cycle
 
@@ -34,7 +41,7 @@ library(knitr)
 
 ## Data handling and curation is time consuming
 
-![](pics/time_spent.png){width=300}
+![](pics/time_spent.png){width="300"}
 
 ## Data cleaning vs Data wrangling
 
@@ -42,12 +49,11 @@ library(knitr)
 
 ***Data wrangling*** changing the format to make it more useful for your analysis
 
-
 ## 
 
 ### Import data with read_delim
 
-See [Import data](https://biostats-r.github.io/biostats/workingInR/005_Importing_Data_in_R.html) BioST@TS tutorial
+See [Import data](https://biostats-r.github.io/biostats/workingInR/005_Importing_Data_in_R.html) BioST\@TS tutorial
 
 ```{r}
 #| label: import
@@ -58,18 +64,17 @@ read_delim(file = "data/plant_community_2024.csv")
 
 ```
 
-
-
 ## 
 
 ### Data cleaning with the Palmer penguins dataset
 
-![](pics/lter_penguins.png){width=120}
+![](pics/lter_penguins.png){width="120"}
 
 ## 
 
 ::: callout-note
 ### Exercise
+
 Run the following commands to install the palmerpenguins package.
 :::
 
@@ -84,7 +89,6 @@ library(palmerpenguins)
 head(penguins_raw)
 
 ```
-
 
 ## 
 
@@ -131,7 +135,6 @@ penguins_clean |>
 
 ### Get a glimps wiht dplyr
 
-
 ```{r}
 #| label: glimpse
 #| echo: true
@@ -142,7 +145,7 @@ penguins_clean |>
 
 ```
 
-##
+## 
 
 ### Skim your data with skimr
 
@@ -158,11 +161,11 @@ out
 
 ```
 
-
 ## 
 
 ::: callout-note
 ### Exercise
+
 Run the following functions:
 
 `clean_names()`
@@ -171,7 +174,6 @@ Run the following functions:
 
 `skimr::skim()`
 :::
-
 
 ## 
 
@@ -191,7 +193,6 @@ rules <- validator(culm = culmen_length_mm >= 0,
                    sex = sex %in% c("FEMALES", "MALE"))
 
 ```
-
 
 ## 
 
@@ -222,14 +223,12 @@ plot(out)
 
 ```
 
-
 ## Rules for data cleaning
 
-- Deposit and back-up raw data files 
-- Do not manually manipulate the raw data files
-- Clean data using code
-- Check the cleaning code
-
+-   Deposit and back-up raw data files
+-   Do not manually manipulate the raw data files
+-   Clean data using code
+-   Check the cleaning code
 
 ## 
 
@@ -257,9 +256,7 @@ dat <- penguins_clean |>
 
 ```
 
-
-
-##
+## 
 
 ### Remove duplicates with dplyr
 
@@ -283,7 +280,7 @@ duplicate_data
 
 ```
 
-##
+## 
 
 ### Remove duplicates with dplyr
 
@@ -298,13 +295,11 @@ duplicate_data |>
 
 ```
 
-
 ## Missing data
 
 Missing data is often a problem, e.g. for running a model. Typically as ecologists we sweep missing data under the carpet by using a "complete case" approach to data analysis.
 
 ![](pics/SWEEP-IT-UNDER-THE-CARPET-BANKSY-2.jpg)
-
 
 ## 
 
@@ -332,7 +327,6 @@ you are removing missing data (NAs) from your dataset.
 
 By throwing away potentially useful data (only including those rows without a NA in them) you reduce the information you are working with, reduce statistical power and introduce selection bias (invalidating any assumption of randomisation).
 
-
 ## 
 
 ### Vizualise missing data with naniar
@@ -352,7 +346,6 @@ penguins_messy <- bind_cols(penguins |>
 
 ```
 
-
 ```{r}
 #| label: naniar
 #| echo: true
@@ -361,7 +354,6 @@ penguins_messy <- bind_cols(penguins |>
 penguins_messy |> 
   naniar::vis_miss()
 ```
-
 
 ## 
 
@@ -381,9 +373,6 @@ penguins_messy |>
 
 ```
 
-
-
-
 ## 
 
 ### Data wrangling with dplyr
@@ -396,7 +385,7 @@ penguins_messy |>
 
 ![](pics/Dplyr_2.jpg)
 
-##
+## 
 
 ### Data wrangling with tidyr
 
@@ -406,19 +395,21 @@ penguins_messy |>
 
 ::: callout-note
 ### Exercise
+
 Use the penguins dataset to:
 
-- Select the columns species, island and body_mass_g
-- Filter for the species Adelie and the island Biscoe and Dream
+-   Select the columns species, island and body_mass_g
 
-- Convert the penguin body mass from gram to kilogram
-- Calculate the mean bill length and standard error for each penguin species
-- Make a wide dataset showing the body mass for each penguin species in a separate column. And turn it back to a long dataframe.
+-   Filter for the species Adelie and the island Biscoe and Dream
+
+-   Convert the penguin body mass from gram to kilogram
+
+-   Calculate the mean bill length and standard error for each penguin species
+
+-   Make a wide dataset showing the body mass for each penguin species in a separate column. And turn it back to a long dataframe.
 
 Import the *messy_data.RDS* data file and clean it.
-
 :::
-
 
 ## Reproducible workflows
 
@@ -427,5 +418,3 @@ Import the *messy_data.RDS* data file and clean it.
 ## Reproducible workflows
 
 ![](pics/quarto_workflow2.png)
-
-

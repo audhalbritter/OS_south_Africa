@@ -10,3 +10,6 @@
 /.quarto/
 
 *.csv
+*.pdf
+*.html
+

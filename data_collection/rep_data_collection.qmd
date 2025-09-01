@@ -7,11 +7,17 @@ format:
     theme: moon
     slide-number: true
     show-slide-number: all
+  beamer:
+    theme: "Madrid"
+    colortheme: "beaver"
+    fonttheme: "structurebold"
+    aspectratio: 169
+    navigation: horizontal
+    section-titles: false
 execute:
   echo: true
 editor: visual
 ---
-
 
 ## 
 
@@ -62,9 +68,9 @@ editor: visual
 
 ::: callout-note
 ### Exercise
+
 Discuss in pairs: are these good spreadsheets?
 :::
-
 
 ![](pics/separate-files2.jpg)
 
@@ -72,6 +78,7 @@ Discuss in pairs: are these good spreadsheets?
 
 ::: callout-note
 ### Exercise
+
 Discuss with your neighbour: are these good spreadsheets?
 :::
 
@@ -79,29 +86,25 @@ Discuss with your neighbour: are these good spreadsheets?
 
 ## Tidy data
 
-
 ![](pics/tidydata_1.jpg)
-
 
 ## Long or wide format
 
-
-![](pics/tidyr-pivot_wider_longer.gif)
-
-
+![](pics/tidyr-pivot_wider_longer.png)
 
 ## Consistency in datasheets
 
 ## Consistency - meaningful names
 
-![](pics/final.png)
+![](pics/final_real.png)
 
 ## Consistency - meaningful names
+
 ::: callout-note
 ### Exercise
+
 Discuss in pairs: which of these are meaningful variable names?
 :::
-
 
 -   T
 
@@ -125,7 +128,6 @@ Discuss in pairs: which of these are meaningful variable names?
 
 -   Avoid reserved names: function, TRUE, mean, etc.
 
-
 ## Consistency - style
 
 ["Good coding style is like correct punctuation: you can manage without it, butitsuremakesthingseasiertoread."](https://style.tidyverse.org/)
@@ -133,7 +135,6 @@ Discuss in pairs: which of these are meaningful variable names?
 ![](pics/cases.jpg)
 
 ## Consistent style with styler
-
 
 ```{r}
 #| label: styler
@@ -152,13 +153,10 @@ style_text("my_function<-function(my_data){
 
 ![](pics/styler.png)
 
-
 ## Consistency - standards
 
 Use global data standards (ISO) when available for dates: yyyy-mm-dd
 
 ![](pics/dates.png)
 
-
 ## Questions?
-
